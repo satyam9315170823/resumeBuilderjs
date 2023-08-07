@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    
+    display: flex;
+}
+.form{
+
+    width: 30%;
+   
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.resume{
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(236, 221, 221);
+}
+input{
+    display: block;
+    width: 90%;
+    color: grey;
+    padding: 10px;
+font-size: 20px;
+}
+label{
+    font-size: 23px;
+
+}
+.submit-button{
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-image: linear-gradient(to left, rgb(198, 176, 217), rgb(13, 34, 93));
+
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.resume-part{
+    height: 90%;
+    width: 80%;
+    background-color: rgb(226, 235, 235);
+    margin:  40px auto;
+    display: flex;
+    box-shadow: 20px 20px 50px gray;
+}
+.left{
+width: 30%;
+background-image: linear-gradient(to left, rgb(198, 176, 217), rgb(13, 34, 93));
+color:white;
+
+}
+.image-section{
+  display: flex;
+  justify-content: center;
+    
+}
+.profile-pic{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+.name,.profile-container,.skill-container{
+    margin-left: 10px;
+    font-size: 25px;
+    
+}
+.right{
+width: 70%;
+padding: 20px;
+}
+.work-ex-heading{
+    margin: 0;
+    padding: 0;
+}
+.work,.education{
+    margin-top: 30px;
+}

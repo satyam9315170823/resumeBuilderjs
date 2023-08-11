@@ -8,26 +8,31 @@ body{
 }
 .form{
 
-    width: 30%;
-   
+    width: 25%;
+    height: 100vh;
+    overflow:scroll;
+
     color: rgb(0, 0, 0);
     padding: 10px;
 }
+fieldset{
+    margin-top: 10px;
+}
 .resume{
     height: 100vh;
-    width: 70%;
+    width: 75%;
     background-color: rgb(236, 221, 221);
 }
 input{
     display: block;
     width: 90%;
     color: grey;
-    padding: 10px;
-font-size: 20px;
+    
+font-size: 15px;
 }
 label{
     font-size: 23px;
-
+    
 }
 .submit-button{
     display: block;
@@ -55,27 +60,82 @@ color:white;
 .image-section{
   display: flex;
   justify-content: center;
+ 
     
 }
+.name{
+    font-size: 30px;
+    font-weight: bold;
+}
 .profile-pic{
+    border: 3px solid white;
     height: 120px;
     width: 120px;
     border-radius: 50%;
     margin-top: 8px;
 }
-.name,.profile-container,.skill-container{
+.name{
     margin-left: 10px;
-    font-size: 25px;
+    margin-top: 15px;
     
+
+    
+}
+.margin-left{
+    margin-left: 10px;
+}
+.left-pad{
+    padding-left: 10px;
+}
+.profile-container,.skill-container{
+    margin-top: 15px;
+}
+.profile-header,.skill-header{
+font-size: 18px;
+font-weight: bold;
+background-color: rgb(100, 53, 144);
+
+}
+.profile-details , .skill-details{
+    margin-top: 10px;
+}
+.key{
+    font-size: 16px;
+    font-weight: bold;
 }
 .right{
 width: 70%;
 padding: 20px;
 }
-.work-ex-heading{
+.work-ex-heading, .education-heading{
     margin: 0;
     padding: 0;
+    font-size: 25px;
+}
+.role{
+    font-size: 18px;
+}
+.project{
+    margin-top: 8px;
+
 }
 .work,.education{
     margin-top: 30px;
+}
+.value{
+    font-size: 14px;
+}
+.company-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.college{
+font-weight: bold;
+font-size: 20px;
+}
+.degree{
+font-size: 17;
+}
+.college-details{
+    margin-top: 10px;
 }

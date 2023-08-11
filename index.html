@@ -6,37 +6,62 @@
     <title>Resume BUILDER</title>
     
     <link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="form">
-            <form onsubmit="submitform()">
+            <form>
             <fieldset>
                 <legend>personal-detail</legend>
-                <label >Image-url</label>
-                <input type="text">
+                <label for="image-url">Image-url</label>
+                <input  type="url" id="image-url">
                 <br>
-                <label >Name</label>
-                <input type="text">
+                <label for="name-field">Name</label>
+                <input  type="text" id="name-field">
                 <br>
-                <label >DOB</label>
-                <input type="text">
+                <label  for="addtess-field">address</label>
+                <input type="text" id="address-field">
                 <br>
-                <label >Marital Status</label>
-                <input type="text">
+                <label for="phone-field" >phone number</label>
+                <input type="number" id="phone-field">
+                <br>
+                <label for="email-field">e mail</label>
+                <input  type="email" id="email-field">
+                <br>
+                <label for="website-field">websites</label>
+                <input  type="url" id="website-field">
                 <br>
                 </fieldset>
                 <fieldset>
                 <legend>skills</legend>
-                <label >Skills</label>
-                <input type="text">
+                <label for="skills-field" >Skills</label>
+                <input  type="text" id="skills-field">
+                </fieldset>
+
+                <fieldset>
+                    <legend>objective</legend>
+              
+            
+                <label  for="objective-field">objective</label>
+                <input  type="text" id="objective-field">
                 <br>
             </fieldset>
                 <fieldset>
                 <legend>work experiences</legend>
-                <label >Experience</label>
-                <input type="text">
+                <div class="experience-conatainer-form">
+                <label for="Experience-field">Experience</label>
+                 <button onclick="experience()" > add</button>                       
+                <input  type="text" class="experience-field">
+                </div>
+                <br>
+            </fieldset>
+                <fieldset>
+                <legend>education</legend>
+                <div class="education-container-form">
+                <label for="education-field" >education</label>
+                 <button onclick="education()">add</button>                       
+                <input  type="text" class="education-field">
+                </div>
                 <br>
             </fieldset>
            <button type="submit" class="submit-button">Submit</button>
@@ -53,51 +78,75 @@
                     </div>
                     <div class="profile-container">
                         <div class="profile-header">
-                            Profile
+                           <span class="margin-left">Profile</span> 
                         </div>
-                        <div class="profile-details">
-                          address <br>
-                          phone <br>
-                          email <br>
-                          websites
+                        <div class="profile-details left-pad">
+                            <div class="key">address </div>
+                            <div class="address-value">d-3 faridabad </div>
+                            <div class="key">phone</div>
+                            <div class="phone-value">01122382 </div>
+                            <div class="key">email</div>
+                            <div class="email-value">xyz@gmail.com</div>
+                            <div class="key">websites</div>
+                            <div class="website-value">www.resume.com </div>
+                        
 
                         </div>
                     </div>
                     <div class="skill-container">
                         <div class="skill-header">
-                            Skills
+                          <span class="margin-left">skills</span> 
                         </div>
-                        <div class="skill-details">
-                              html <br> css <br> javascript <br> react   
+                        <div class="skill-details left-pad">
+                            <div class="value">html </div>
+                            <div class="value">css</div>
+                            <div class="value">javascript</div>
+                            <div class="value">react</div>
                         </div>
                     </div>
                 </div>
                 <div class="right">
-                    <div class="objective">to work in a challemging enviroment</div>
+                    <div class="objective">to work in a challemging enviroment Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam doloremque voluptates, modi tenetur doloribus repudiandae dolorum. Quia quod eaque iste explicabo dolore iusto ex ab repellendus vero officiis. Aspernatur, sapiente, a modi recusandae explicabo soluta quod eos voluptatem est repellendus ducimus unde sit inventore necessitatibus.</div>
                     
                     <div class="work"> 
                         <hr>
                         <h3 class="work-ex-heading" >work - experiences</h3>
                         <hr>
+                        <div id="experiences-holder">
                         <div class="work-ex-details">
-                            on point  electronics
-                            <br>
-                            pizza hut
+                            <div class="company-name">xyz</div>
+                            <div class="role">xyz</div>
+                       <div class="project">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit beatae corrupti architecto magnam nostrum necessitatibus minima incidunt assumenda saepe eum.</div>
                         </div>
+                        <div class="work-ex-details">
+                            <div class="company-name">xyz</div>
+                            <div class="role">xyz</div>
+                       <div class="project">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio nesciunt ratione cum eius fuga minima reprehenderit, optio rem recusandae dicta!</div>
+                        </div>
+                    </div>
                     </div>
                     <div class="education">
                         <hr>
-                        <h3 class="work-ex-heading">education</h3>
+                        <h3 class="education-heading">education</h3>
                         <hr>
                         <div>
-                            on point  electronics
-                            <br>
-                            pizza hut
+                            <div id="education-holder">
+                            <div class="college-details">
+                            <div class="college">collge</div>
+                            <div class="degree">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at animi deserunt?</div>
+                            </div>
+                            <div class="college-details">
+                            <div class="college">collge</div>
+                            <div class="degree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem.</div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
+
 </body>
 </html>

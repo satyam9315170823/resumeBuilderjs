@@ -76,7 +76,7 @@ function education() {
      input_ele.type = "text"
 
      input_ele.className = "education-field"
-
+input_ele.placeholder = "college name";
      document.querySelector(".education-container-form").append(input_ele)
 }
 function experience() {
@@ -84,6 +84,7 @@ function experience() {
      input_ele.type = "text"
 
      input_ele.className = "experience-field"
+     input_ele.placeholder = "company name,profile,project";
 
      document.querySelector(".experience-conatainer-form").append(input_ele)
 }
